@@ -1,0 +1,95 @@
+\documentclass{report}
+\title{R2 Unit Tiny specifications}
+\author{E.R}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+%=======================================
+\chapter{Functional design}
+%=======================================
+\section{Overview}
+%---------------------------------------
+\subsection{Goal}
+
+Build a smaller scale fonctional R2-inspired unit from the Star Wars universe. This experience will serve to feed the R2 full-scale project.
+
+%---------------------------------------
+\subsection{Functionalities}
+
+\paragraph{Main function}
+Behaves autonomously as a pet.
+
+\paragraph{Subfunctions}
+
+1. Wander around given its own will (with obstacle usual avoidance)
+
+2. Avoid death from low battery
+
+3. Sound communicate
+
+4. Can poke/interact with its environment.
+
+%1. Can connect to the network and request informations (to internet, to connected devices - e.g. plant monitoring system, to home domotic system, ...)
+
+%=======================================
+\chapter{Technical design}
+%=======================================
+\section{Packages}
+%---------------------------------------
+\subsection{Mobile base}
+%---------------------------------------
+\subsection{Sensoring}
+Camera for visual recognition of faces, remote search of objects
+
+Microphones for verbal commands, localisation of individuals
+
+Depth/range sensors for 3D shape sensoring (obstacle avoidance navigation, mapping)
+
+Temperature (internal)
+%---------------------------------------
+\subsection{Grippers, tools}
+None
+%---------------------------------------
+\subsection{Communication}
+%---------------------------------------
+%\subsubsection{Visual}
+%Screen for displaying various non-verbal information
+%---------------------------------------
+\subsubsection{Sound}
+Sound language (learned?) 
+%---------------------------------------
+\subsubsection{Networks}
+
+\paragraph{Wifi}
+
+%---------------------------------------
+\subsection{Power and Autonomy}
+
+\begin{center}
+  \begin{tabular}{l | l }
+    Desired autonomy & 4h \\ \hline
+    Battery level for automatic docking  & 15mn\\ \hline
+    Battery level for emergency plugging  & 5mn\\
+  \end{tabular}
+\end{center}
+
+%---------------------------------------
+\subsection{Behavioral controller}
+
+SM loop
+
+Sample sensors
+
+Update motivation levels : battery charge (natural decrease over time/activity), external activity (environment high-frequency changes), normal boreness (time-dependant evolution)
+
+Merge sensors/motivation into motor commands
+
+%---------------------------------------
+%=======================================
+\section{Summing up}
+
+
+\end{document}
